@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 720px;
+    background-image: url("/img/web_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+canvas{
+    display: block;
+    border: 1px solid black;
+    margin: 10px auto 0;
+}
+
+@media(max-width: 540px){
+    body{
+        background-color: lightblue;
+        width: 480px;
+        height: 1024px;
+        line-height: 480px;
+    }
+    
+    canvas{
+        margin-top: 20%;
+    }
+    
+    .qrcode{
+        top: 710px !important;
+        left: 15px !important;
+    }
+}
+
+img[alt="www.000webhost.com"]{
+    display: none !important;
+}
+
+canvas button{
+    margin: auto;
+    padding: 30px;
+}
+
+.qrcode{
+    display: none;
+    position: absolute !important;
+    top: 640px;
+    left: calc(50% - 220px);
+    z-index: 999;
+}
